@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.summary-section {
+    width: 20%;
+    background-color: #E8E8E8;
+    padding: 20px;
+    overflow-y: hidden;
+}
+
+.chatbot-section {
+    width: 80%;
+    background-color: #E8E8E8;
+    padding: 20px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    height: 8%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13), 0 1px 1px 0 rgba(0, 0, 0, 0.11);
+    z-index: 1;
+}
+
+.header h2 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.header-image {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: auto;
+    height: 80%;
+}
+
+.header-date {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: normal;
+}
+
+.left-header {
+    background-color: #E1B882;
+    color: black;
+}
+
+.right-header {
+    background-color: #4D4A4A;
+    color: white;
+}
+
+.inner-container {
+    background-color: #D9D9D9;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 80%;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px inset, rgba(0, 0, 0, 0.1) 0px 4px 15px -4px;
+    padding: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+}
+
+.inner-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.inner-container::-webkit-scrollbar-track {
+    background: rgb(179, 177, 177);
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.inner-container::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    border-radius: 10px;
+}
+
+.inner-container::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+}
+
+.inner-container::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68);
+}
+
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px; 
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.send-icon {
+    position: absolute;
+    right: 15px; 
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+
+.chat-input::placeholder {
+    color: #aaa;
+}
+
+
+
+.chatbot-messages {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    
+}
+
+.chatbot-messages .message {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-messages .ai-message {
+    align-self: flex-start;
+    background-color: #f1eceb;
+    color: #333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.chatbot-messages .user-message {
+    align-self: flex-end;
+    background-color: #B3261E;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card {
+    background-color: #ECE7E0;
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 0.8rem;
+    line-height: 1.1;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.card ul li {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    line-height: 1.1;
+}
+
+h2 {
+    margin: 15px;
+    font-size: large;
+    font-weight: 600;
+}
+
